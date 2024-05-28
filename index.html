@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pokédex</title>
+  <link rel="icon" href="https://icon-library.com/images/pokemon-icon-png/pokemon-icon-png-0.jpg" type="image">
+</head>
+<body>
+  <div class="pokedex">
+    
+    <h1><img src="https://icon-library.com/images/pokemon-icon-png/pokemon-icon-png-0.jpg" height="30px" width="30px" alt="">Pokédex</h1>
+    <div class="search-container">
+      <input type="text" id="pokemonName" placeholder="Enter Pokémon name">
+      <button onclick="searchPokemon()">Search</button>
+    </div>
+    <div id="pokemonInfo" class="hidden">
+      <h2 id="pokemonTitle"></h2>
+      <img id="pokemonImage" alt="Pokemon">
+      <p id="pokemonHeight"></p>
+      <p id="pokemonWeight"></p>
+      <p id="pokemonTypes"></p>
+    </div>
+    <div class="navigation">
+      <button onclick="showPrevPokemon()">Previous</button>
+      <button onclick="showNextPokemon()">Next</button>
+    </div>
+    <div id="relatedPokemon" class="hidden">
+      <h2>Related Pokémon:</h2>
+      <div id="relatedPokemonList" class="related-pokemon-list"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
